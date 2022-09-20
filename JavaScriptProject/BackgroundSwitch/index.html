@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroung changer</title>
+    <style>
+       body{
+        margin: 0px;
+        padding: 20px 200px;
+
+       }
+       h1{
+        text-align: center;
+        text-decoration: underline;
+       }
+       img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+       }
+       p{
+        font-size: 18px;
+        text-align: justify;
+       }
+       .btn{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid gold 2px;
+        border-radius: 50%;
+        cursor: pointer;
+       }
+       #white{
+           background-color: azure;
+       }
+       #black{
+              background-color: black;
+       }
+       #blue{
+             background-color: blue;
+       }
+       #aqua
+       {
+        background-color: aqua;
+       }
+       #color-Switch
+       {
+          text-align: right;
+       }
+
+    </style>
+</head>
+   <script>
+             function changeBG(color)
+             {
+                document.body.style.backgroundColor=color;
+                let txt=document.getElementsByClassName('text')
+                if(color=='#000000')
+                {
+                    for(let elm of txt)
+                    {
+                        elm.style.color='white';
+                    }
+                }
+                else{
+                    for(let elm of txt)
+                    {
+                        elm.style.color='black';
+                    }
+
+                }
+             }
+
+  </script>
+<body>
+    <div id="color-Switch">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        <span class="btn" id="blue" onclick="changeBG('#0000ff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#00FFFF')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="nature.jpg" alt="nature"/>
+
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus ea consectetur vel, officia veniam assumenda. Fugiat nobis qui iure provident. Praesentium dolores eos neque placeat earum, cupiditate minima fuga, omnis modi officiis quis aut voluptatum in aspernatur ea delectus numquam sed est ab, ad fugiat exercitationem doloribus. Nisi reiciendis laudantium minus iste saepe error voluptas unde et id expedita? Beatae omnis, magni delectus, voluptates optio consequatur autem, placeat repellendus deleniti ipsam corporis iusto quidem aut. Officiis harum beatae ratione fuga aut, rerum iusto ab eius atque sed optio vel aliquam explicabo in dolore tenetur esse cumque. Maiores aperiam aspernatur voluptate laboriosam fugiat nulla iste nesciunt dolor quos a ullam deserunt doloremque sequi cupiditate expedita neque, fuga enim, voluptatum reiciendis rerum. Facere alias, atque incidunt tenetur itaque laboriosam. Necessitatibus delectus eum ullam aliquam laudantium fuga in autem voluptates a neque adipisci, minus totam quod exercitationem maxime! Est dolorum explicabo, nihil veniam odit sequi necessitatibus dicta ipsa quaerat reiciendis minus? Quae eveniet aspernatur, quisquam esse asperiores non odio nulla velit veritatis voluptatibus itaque vel minus, tenetur voluptatem quam debitis a magnam assumenda. Maxime temporibus explicabo nobis, autem nisi incidunt, quidem nesciunt, blanditiis dolorum voluptas sint! Repudiandae porro obcaecati eos esse ex consequatur consectetur accusamus nisi earum aperiam veritatis modi repellendus cupiditate, laudantium ipsa ab odio perferendis molestias labore, ullam dicta consequuntur nulla? Blanditiis eos corrupti excepturi odit, dolorum possimus iste. At aliquid est, necessitatibus tenetur eligendi laborum voluptate rem recusandae. Cum tempore cupiditate blanditiis adipisci rerum earum in ducimus iure deserunt culpa? Magnam doloribus aspernatur eaque. Ex sit tempora ut delectus! dita nobis illum provident ad maxime possimus corporis debitis enim veritatis suscipit, fuga atque obcaecati, recusandae nesciunt distinctio fugit sapiente at? Laborum aut distinctio nam non magni, corporis voluptas eveniet culpa corrupti quaerat tempore soluta adipisci blanditiis itaque natus repellat quam, ut rem incidunt sequi dolore ex quia eius ipsam. Tempora officiis itaque officia pariatur! Iste possimus repellat rem dolorem nostrum voluptates veniam esse, quaerat placeat, minima assumenda?</p>
+</body>
+</html>

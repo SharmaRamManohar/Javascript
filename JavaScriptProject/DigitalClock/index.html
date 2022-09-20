@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: rgb(17, 17, 17);
+        }
+        html,body
+        {
+            height: 100%;
+
+        }
+        body{
+            display: grid;
+            place-items: center;
+           
+
+        }
+        .clock
+        {
+            background-color: black;
+            height: 120px;
+            width: 500px;
+            line-height: 120px;
+            text-align: center;
+            padding: o 5px;
+            border-radius: 15px;
+            /* box-shadow: -3px -3px 7px rgba(214, 42, 42, 0.05), */
+                          /* 3px 3px 5px rgba(0, 0, 0, 0.5) */
+                          /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+                          box-shadow: rgba(15, 15, 15, 0.2) 0px 60px 40px -7px;
+        }
+        .clock .display
+        {
+            font-size: 60px;
+            color: cyan;
+            letter-spacing: 5px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            font-family: "Gill Sans Extrabold", sans-serif;
+            /* font-family: "Goudy Bookletter 1911", sans-serif; */
+        }
+    </style>
+</head>
+<script>
+        let clock=document.querySelector(".display")
+        let time=new Date();
+        let sec = time.getSeconds()
+        let min = time.getMinutes()
+        let hr = time.getHours()
+
+        clock.textcontent =(hr +min +sec)
+    //   clock.textContent= hr + ':' + min + ':' + sec;
+        // clock=hr + ":";
+
+
+</script>
+<body>
+    <div class="clock">
+        <div class="display"></div>
+    </div>
+</body>
+</html>

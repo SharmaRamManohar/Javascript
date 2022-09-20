@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stricky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+        #header
+        {
+            text-align: center;
+        }
+        #logo
+        {
+            width: 250px;
+            height: auto;
+           
+        }
+        #menu-bar
+        {
+            text-align: center;
+            background-color: aqua;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container
+        {
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #img{
+            width: 100%;
+        }
+        #ptag
+        {
+            text-align: justify;
+        }
+        .sticky
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .container
+        { 
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+    </style>
+</head>
+ <script>
+    window.addEventListener('scroll',function()
+    {
+        let Navbar=document.getElementById('menu-bar')
+        if(window.pageYOffset>=226)
+        {
+            console.log('ok')
+            Navbar.classList.add("sticky")
+        }
+        else{
+          Navbar.classList.remove("sticky")  
+        }
+    })
+
+ </script>
+<body>
+
+    <div id="header">
+     
+    </div>
+   
+   <nav id="menu-bar">
+    <li>Home</li>
+    <li>about Us</li>
+    <li>Our Team</li>
+    <li>Our Client</li>
+    <li>contect us</li>
+   </nav> 
+   <div class="container">
+   <img src="logo.png" alt="logo" id="logo" srcset="">
+    </div>
+   <div id="container">
+    <h1>About Us</h1>
+    <img src="nature.jpg" id="img" alt="nature" srcset="">
+    <p id="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatibus eligendi ut animi accusantium. Aliquam corrupti numquam quasi libero. Veniam ullam eos, numquam eveniet quia perspiciatis voluptatum maiores ea quos quas debitis reprehenderit dolorem temporibus qui illo dolor tempore nisi dicta ratione ab nulla suscipit consequuntur! Sequi rerum aliquam accusamus illo maiores commodi fugiat, quasi, ratione officiis pariatur fugit eum suscipit? Repudiandae itaque, odit asperiores ea pariatur voluptatum nesciunt blanditiis commodi sapiente quam consectetur fugit aliquam laboriosam repellendus magnam modi quisquam voluptas nemo expedita animi dolorum quidem inventore unde? Molestias maiores numquam quaerat officiis quidem dicta pariatur, quas sint architecto quod aliquam, deserunt voluptatem culpa ipsa sunt blanditiis dignissimos cum. Assumenda nemo fuga perspiciatis, incidunt magni dolores quasi molestias quaerat maxime deleniti temporibus adipisci odit recusandae illum cum facilis nam laboriosam quod reiciendis voluptates fugit, accusamus culpa pariatur consequatur? Perferendis quidem quasi quae nesciunt iste autem, numquam quis dignissimos nemo dicta fugiat in enim ad voluptate maxime similique ullam! Nihil, reiciendis. Esse, sit. Sunt, nobis aspernatur placeat id vero quasi aperiam harum magnam, tempore voluptates quas sit unde assumenda dolorem deleniti natus. In beatae exercitationem odit quae vel corrupti reprehenderit, eveniet ea nisi esse similique reiciendis, quis consequuntur, magnam eos.</p>
+   </div>
+</body>
+</html>

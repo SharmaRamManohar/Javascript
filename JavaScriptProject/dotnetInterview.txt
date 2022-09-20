@@ -1,0 +1,37 @@
+sql 
+
+primary key  
+foregin key
+unique key
+aggregate function 
+join
+group 
+having and clause 
+undate delete and truncket
+store procesure
+ddl dml  
+
+
+
+mvc   
+
+master paage
+partial view 
+validation 
+display for annd editor for
+CRUD 
+
+
+javascript
+
+
+
+
+c# 
+
+try 
+catch 
+multithreading
+genric
+
+
